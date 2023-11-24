@@ -1,0 +1,84 @@
+/* .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media screen and (min-width: 600px) {
+    .sidenav {
+        display: none;
+    }
+
+
+
+    .burger-icon {
+        /*display: list-item;*/
+    
+
+
+
+
+/* @media screen and (max-width: 600px) {
+    .divNav {
+        display: none;
+    }
+
+    ;
+
+} */ */
+
+
+/* PARTIE HUGO */
+
+.sidenav{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: beige;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #111;
+}
+
+.sidenav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav.active{
+    left: 0;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.burger-icon span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
