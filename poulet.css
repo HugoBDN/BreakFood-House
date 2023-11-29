@@ -212,13 +212,13 @@ flex-direction: column;
 }
 
 .ingrédients {
-    border: 2.5px dashed rgb(253, 230, 26);
+    border: 2.5px dashed rgb(48, 47, 47);
     list-style-type:none;
     margin: 1rem 2rem 1rem 2rem;
     padding: 1rem 2rem 1rem 1rem;
     font-size: large;
     line-height: 30px;
-    background-color: rgb(247, 235, 123);
+    background-color: rgb(248, 200, 123);
 }
 
 .ingrédients li::before{
@@ -249,13 +249,13 @@ padding: 10px;
     background-color: red;
     padding: 5px;
     margin-top: 5px;
-    border: 2.5px dashed rgb(253, 230, 26);
+    border: 2.5px dashed rgb(48, 47, 47);
     list-style-type:none;
     margin: 1rem 2rem 1rem 2rem;
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     font-size: large;
     line-height: 30px;
-    background-color: rgb(247, 235, 123);
+    background-color: rgb(248, 200, 123);
     white-space: normal;
 }
 
@@ -302,4 +302,20 @@ text-align: center;
 .tiktok{
     width: 15%;
     border-radius: 50%;
+}
+
+/*===============MEDIA QUERY===============*/
+
+@media screen and (min-width: 769px) {
+    .section1,
+    .section2,
+    .section3 {
+        margin-left: 15%;
+        margin-right: 15%;
+
+    }
+
+    .burgerIcon {
+        display: none;
+    }
 }
