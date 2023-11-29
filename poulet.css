@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*===============HEADER===============*/
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(180, 139, 85);
+    padding: 0.4rem;
+    border-bottom: solid 1px;
+    justify-content: space-around;
+    
+    
+}
+
+.logo{
+    width: 20%;
+    max-width: 100%;
+    border-radius: 50%;
+    border-style: revert;
+    background-image: none;
+    size: auto;
+    
+    
+}
+
+.sidenav{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5;
+    width: 15rem;
+    height: 30rem;
+    top: 0;
+    right: -250px;
+    transition: 0.8s ease;
+    
+    
+    
+}
+
+.sidenav.active{
+    right: 0;
+    box-shadow: -10px 12px 45px 0px rgb(0, 0, 0);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+.close{
+    width: 18px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.userPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+
+.avatar{
+    width: 58%;
+    border-radius: 50%;
+}
+
+.buttonConnect {
+    border-radius: 18%;
+    padding: 0.4rem;
+    border: 0.1rem solid rgb(79, 163, 202);
+    box-shadow: 4px 6px teal;
+    font-family: 'Raleway', sans-serif
+}
+
+.sideNavList{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.onglets{
+    display: none;
+    position: absolute;
+    top: 0;
+  
+}
+
+.srcBar{
+    justify-content: center;
+}
+
+.sideNavItem{
+    padding: 0.8rem;
+    font-family: 'Raleway', sans-serif
+}
+
+.burgerIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ 
+ }
+ 
+ .burgerBar{
+     display: list-item;
+     background-color: black;
+     width: 40px;
+     height: 8px;
+     margin: 1.8px;
+     list-style: none;
+     
+     
+ }
+
+ header input{
+    place-self: center;
+    height: 2.5rem;
+    margin-right: 1.5rem;
+    border: 0.5px solid rgb(72, 69, 69);
+    border-radius: 50px;
+    box-shadow: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+input:focus{
+    outline: none;
+    outline-style: inherit;
+    border-color: rgba(14, 129, 229, 0.733);
+    border-spacing: 5px; 
+    
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: rgba(113, 113, 113, 0.363);
+}
+
+/*===============BODY===============*/
+
+body {
+    background-color: rgba(255, 216, 125, 0.814);
+}
+
+/*===============BODY - SECTION 1===============*/
+
+
+
+.blocPhoto {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    background-color: rgba(255, 216, 125, 0.814);
+
+}
+
+.poulet-titre1 {
+    font-family: 'Orelega One', serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 520;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+
+.sepBar {
+    display: block;
+    width: 33%;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    margin-bottom: 1.5rem;
+    
+  }
+
+  .poulet{
+    width: 88%;
+    border-radius: 50px;
+    border: solid rgb(255, 255, 255)4.5px;
+    border-spacing: 35px;
+    place-self: center;
+}
+
+  .indications {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    gap: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .indications .point-médian {
+    font-size: 20px;
+  }
+
+/*===============FOOTER===============*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    border: solid rgb(0, 0, 0) 1px;
+    border-left: 0;
+    border-right: 0;
+    font-family: 'Raleway', sans-serif; 
+    line-height: 1.8rem;
+    background-color: rgb(180, 139, 85);
+
+}
+
+.liste1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    
+   
+}
+
+.liste2 {
+list-style-type: none;
+text-align: center;
+}
+
+.facebook{
+    width: 22%;
+}
+
+.twitter{
+    width: 15%;
+    border-radius: 50%;
+}
+
+.tiktok{
+    width: 15%;
+    border-radius: 50%;
+}
