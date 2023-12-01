@@ -64,6 +64,7 @@ header{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     transform: rotate(90deg);
     width: 3%;
+    cursor: pointer;
     
 }
 

@@ -285,6 +285,10 @@ footer {
     border-right: 0;
     font-family: 'Raleway', sans-serif; 
     line-height: 1.8rem;
+    
+    background-image: url(Shutterstock/Bonapp.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-color: rgb(180, 139, 85);
 
 }
