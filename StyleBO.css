@@ -20,8 +20,6 @@ header{
     padding: 0.4rem;
     border-bottom: solid 1px;
     justify-content: space-around;
-    
-    
 }
 
 a{
@@ -36,8 +34,6 @@ a{
     border-style: revert;
     background-image: none;
     size: auto;
-    
-    
 }
 
 .sidenav{
@@ -46,19 +42,11 @@ a{
     flex-direction: column;
     position: fixed;
     z-index: 5;
-    
     width: 15rem;
     height: 30rem;
     top: 0;
-    /* left: -250px; */
     right: -250px;
-    /*border-left: 0.1rem solid black;
-    border-bottom: 0.1rem solid black ;*/
-    /* box-shadow: -10px 12px 45px 0px rgb(0, 0, 0); */
     transition: 0.8s ease;
-    
-    
-    
 }
 
 .sidenav.active{
@@ -66,7 +54,6 @@ a{
     box-shadow: -10px 12px 45px 0px rgb(0, 0, 0);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-
 }
 
 .close{
@@ -99,15 +86,7 @@ a{
     font-family: 'Raleway', sans-serif
 }
 
-/*.logIn{
-    margin-top: 0.5rem;
-    background-color: grey;
-    border-radius: 2rem;
-    width: 8rem;
-    height: 1.7rem;
-    text-align: center;
-    
-}*/
+
 
 .sideNavList{
     margin-top: 5rem;
@@ -118,7 +97,11 @@ a{
     
 }
 
-.onglets{
+#arrow{
+    display: none;
+}
+
+#onglets{
     display: none;
     position: absolute;
     top: 0;
@@ -230,8 +213,18 @@ p{
 }
 
 h1,
-h2,
+
 h3{
+    font-family: 'Orelega One', serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 520;
+    letter-spacing: 1px;
+    border-radius: 15px;
+}
+
+ h2{
+    text-align: center;
     font-family: 'Orelega One', serif;
     font-weight: bold;
     font-size: 1.2em;
@@ -246,7 +239,7 @@ a h1{
 
 
 .title1,
-.title2,
+
 .title3{
     display: flex;
     flex-direction: column;
@@ -255,7 +248,10 @@ a h1{
     margin-right: auto;
 }
 
-
+.title2{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .sepBar{
@@ -265,6 +261,7 @@ a h1{
   margin-left: auto;
   margin-right: auto;
   margin-top: 4px;
+  
   
 }
 
@@ -320,7 +317,7 @@ a h1{
     flex-flow: wrap;
     text-align: center;
     padding-top: 1.8rem;
-    background-color: rgba(255, 185, 63, 0.826)s
+    background-color: rgba(255, 185, 63, 0.826);
 
 }
    
@@ -365,7 +362,7 @@ a h1{
 .ADJ {
     display: flex;
     flex-direction: column;
-    /* flex-flow: wrap;  */
+    
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
@@ -394,6 +391,10 @@ a h1{
 .SDI {
     
     padding-top: 1.3rem;
+}
+
+.SDI .bloc1{
+    border-top: solid 1px rgba(0, 0, 0, 0.34);
 }
 
 .salade{
@@ -428,6 +429,10 @@ footer {
     line-height: 1.8rem;
     background-color: rgb(180, 139, 85);
 
+}
+
+.bonApp{
+    display: none;
 }
 
 .liste1 {

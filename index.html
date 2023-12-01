@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="reset.css">
     <link class="media" media="screen and (max-width: 769px)" rel="stylesheet" href="StyleBO.css">
     <link rel="stylesheet" media="screen and (min-width: 770px)" href="styledesk.css">
-    <!-- <link rel="stylesheet" href="burger.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
@@ -57,7 +56,7 @@
     </header>
 
     <div class="mainDiv">
-        <ul class="onglets">
+        <ul id="onglets">
             <li class="deskNavItem"><a href="#">Préférences</a></li>
             <li class="deskNavItem"><a href="#">Publier une recette</a></li>
             <li class="deskNavItem"><a href="#">Random Breakout</a></li>
@@ -70,62 +69,63 @@
             <span class="sepBar"></span>
         </div>
 
+        <div class="picDiv" media="screen and (max-width: 769px)">
+            <section class="RALU">
+                <div class="bloc1">
 
-        <section class="RALU">
-            <div class="bloc1">
+
+                    <a href="">
+                        <img class="baba" src="Shutterstock/BABA_2.jpg" alt="photo de baba au rhum">
+                        <h1>Baba au rhum du roi de Pologne</h1>
+                    </a>
+                    <p>Cette recette originale de baba au rhum vous fera voyager dans
+                        la Lorraine du XIXe siècle, à Nancy précisément, où le fameux gâteau fut
+                        inventé par les cuisiniers du roi de Pologne </p>
+
+                </div>
+
+                <div class="bloc2">
+                    <a href="">
+                        <img class="poulet" src="Shutterstock/POULET_2.jpg" alt="photo de poulet">
+                        <h1>Poulet rôti du dimanche</h1>
+
+                    </a>
+                    <p>Quoi de mieux qu'un gros poulet croustillant et juteux, rôti au four
+                        et servi avec des pommes de terre caramélisées ? À déguster en famille ou entre amis
+                        le dimanche avant la sieste
+
+                    </p>
+
+                </div>
+
+                <div class="bloc3">
+                    <a href="" src="" alt="photo de flan">
+                        <img class="flan" src="Shutterstock/FLAN_2.jpg" alt="photo de flan">
+                        <h1>Flan coco de ta grand-mère</h1>
+                    </a>
+                    <p>Attention banger ! Vous ne vous remettrez jamais de cette vénérable recette antillaise dont les
+                        pays du monde entier revendiquent l'invention durant l'entre-deux guerre, où le marché de la
+                        noix de coco est alors en plein essor
+                    </p>
+
+                </div>
 
 
-                <a href="">
-                    <img class="baba" src="Shutterstock/BABA_2.jpg" alt="photo de baba au rhum">
-                    <h1>Baba au rhum du roi de Pologne</h1>
-                </a>
-                <p>Cette recette originale de baba au rhum vous fera voyager dans
-                    la Lorraine du XIXe siècle, à Nancy précisément, où le fameux gâteau fut
-                    inventé par les cuisiniers du roi de Pologne </p>
+            </section>
 
+            <div class="title2">
+                <h2>L'ASTUCE DU JOUR</h2>
+
+                <span class="sepBar"></span>
             </div>
-
-            <div class="bloc2">
-                <a href="" src="" alt="">
-                    <img class="poulet" src="Shutterstock/POULET_2.jpg" alt="photo de poulet">
-                    <h1>Poulet rôti du dimanche</h1>
-
-                </a>
-                <p>Quoi de mieux qu'un gros poulet croustillant et juteux, rôti au four
-                    et servi avec des pommes de terre caramélisées ? À déguster en famille ou entre amis
-                    le dimanche avant la sieste
-
+            <section class="ADJ">
+                <img class="ampoule" src="Shutterstock/ampoule_tips.jpg" alt="photo d'ampoule">
+                <p>
+                    50 astuces pour éviter la formation de peau sur votre
+                    lait chaud (la 20ème va vous surprendre !)
                 </p>
-
-            </div>
-
-            <div class="bloc3">
-                <a href="" src="" alt="photo de flan">
-                    <img class="flan" src="Shutterstock/FLAN_2.jpg" alt="photo de flan">
-                    <h1>Flan coco de ta grand-mère</h1>
-                </a>
-                <p>Attention banger ! Vous ne vous remettrez jamais de cette vénérable recette antillaise dont les
-                    pays du monde entier revendiquent l'invention durant l'entre-deux guerre, où le marché de la
-                    noix de coco est alors en plein essor
-                </p>
-
-            </div>
-
-
-        </section>
-
-        <div class="title2">
-            <h2>L'ASTUCE DU JOUR</h2>
-
-            <span class="sepBar"></span>
+                <img class="vieille" src="Shutterstock/VIEILLE_1.jpg" alt="photo de vieille">
         </div>
-        <section class="ADJ">
-            <img class="ampoule" src="Shutterstock/ampoule_tips.jpg" alt="photo d'ampoule">
-            <p>
-                50 astuces pour éviter la formation de peau sur votre
-                lait chaud (la 20ème va vous surprendre !)
-            </p>
-            <img class="vieille" src="Shutterstock/VIEILLE_1.jpg" alt="photo de vieille">
 
         </section>
 
@@ -181,17 +181,19 @@
     <footer>
 
         <ul class="liste1">
-            <li>Contact</li>
-            <li>À propos</li>
-            <li>Mentions Légales</li>
+            <li class="li1">Contact</li>
+            <li class="li1">À propos</li>
+            <li class="li1">Mentions Légales</li>
         </ul>
 
+        <!-- <img class="bonApp" src="Shutterstock/Bonapp.png" alt="BON APPETIT"> -->
 
-        <!-- <h4>Suivez les réseaux</h4> -->
+
+
         <ul class="liste2">
-            <li><img class="twitter" src="Shutterstock/twitter.jpg" alt="Twitter"></li>
-            <li><img class="facebook" src="Shutterstock/facebook-logo-0.png" alt="Facebook"></li>
-            <li><img class="tiktok" src="Shutterstock/Tiktok_logo.png" alt="Tiktok"></li>
+            <li class="li2"><img class="twitter" src="Shutterstock/twitter.jpg" alt="Twitter"></li>
+            <li class="li2"><img class="facebook" src="Shutterstock/facebook-logo-0.png" alt="Facebook"></li>
+            <li class="li2"><img class="tiktok" src="Shutterstock/Tiktok_logo.png" alt="Tiktok"></li>
 
         </ul>
 
